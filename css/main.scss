@@ -19,9 +19,21 @@ body{
     font-family: 'Public Sans', sans-serif;
     font-size: 1.6rem;
     font-weight: 300;
+    font-size: 1.8rem;
+}
+
+.phones{
+    background-image: url(../images/bg-intro-mobile.svg);
+    display: inline-block;
+    width: 100px;
+    height: 200px
+}
+
+.wrapper{
+    padding: 0 20px;
 }
 .hero{
-    border: 2px solid blue;
+    // border: 2px solid blue;
     width: 100%;
     height: auto;
     text-align: center;
@@ -30,13 +42,11 @@ body{
         font-size: 3.5rem;
         margin: 16px;
         font-weight: 500;
-        padding: 0 20px;
         color: var(--darkBlue);
     }
     &__text{
         font-size: 1.4rem;
         margin-bottom: 40px;
-        padding: 0 30px;
         line-height: 2.5rem;
         color: var(--grayishBlue);
     }
