@@ -1,0 +1,20 @@
+.features{
+    background-color: var(--veryLight);
+    padding: 0 var(--wrapperSpace);
+    
+    .feature__main_tittle{
+        @extend .hero;
+        
+        h2{
+            font-size: 3rem
+        }
+    }
+    .feature__box{
+        @extend .hero;
+
+        h1{
+            font-size: 2rem;
+            font-weight: 400;
+        }
+    }
+}

@@ -6,6 +6,7 @@
   --lightGrayish: hsl(220, 16%, 96%);
   --veryLight: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
+  --wrapperSpace: 20px;
 }
 
 * {
@@ -26,45 +27,83 @@ body {
   font-size: 1.8rem;
 }
 
-.phones {
-  background-image: url(../images/bg-intro-mobile.svg);
-  display: inline-block;
-  width: 100px;
-  height: 200px;
-}
-
-.wrapper {
+body .wrapper {
   padding: 0 20px;
 }
 
-.hero {
+.header-container {
+  padding: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header img {
+  height: 22px;
+  width: auto;
+}
+
+.header-menu {
+  width: 30px;
+  background: url(../../images/icon-hamburger.svg) no-repeat center;
+}
+
+.header-background {
+  display: inline-block;
+  width: 375px;
+  height: 300px;
+  background: url(../images/image-mockups.png) bottom no-repeat, url(../images/bg-intro-mobile.svg) center no-repeat;
+  background-size: 345px, cover;
+  margin-bottom: 1rem;
+}
+
+.hero, .features .feature__main_tittle, .features .feature__box {
   width: 100%;
   height: auto;
   text-align: center;
+  margin-bottom: 10rem;
+  padding: 0 var(--wrapperSpace);
 }
 
-.hero__tittle {
+.hero h1, .features .feature__main_tittle h1, .features .feature__box h1, .hero h2, .features .feature__main_tittle h2, .features .feature__box h2 {
   font-size: 3.5rem;
   margin: 16px;
   font-weight: 500;
   color: var(--darkBlue);
 }
 
-.hero__text {
+.hero p, .features .feature__main_tittle p, .features .feature__box p {
   font-size: 1.4rem;
   margin-bottom: 40px;
   line-height: 2.5rem;
   color: var(--grayishBlue);
 }
 
-.hero .button {
+.hero .button, .features .feature__main_tittle .button, .features .feature__box .button {
   padding: 12px 30px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   border-radius: 18px;
   background-image: -webkit-gradient(linear, left top, right top, from(var(--limeGreen)), to(var(--brightCyan)));
   background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--brightCyan) 100%);
   color: white;
   text-decoration: none;
+  font-weight: 400;
+}
+
+.features {
+  background-color: var(--veryLight);
+  padding: 0 var(--wrapperSpace);
+}
+
+.features .feature__main_tittle h2 {
+  font-size: 3rem;
+}
+
+.features .feature__box h1 {
+  font-size: 2rem;
   font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */

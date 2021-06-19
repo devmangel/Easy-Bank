@@ -1,0 +1,30 @@
+.hero {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 10rem;
+    padding: 0 var(--wrapperSpace);
+
+    h1, h2{
+        font-size: 3.5rem;
+        margin: 16px;
+        font-weight: 500;
+        color: var(--darkBlue);
+    }
+    p{
+        font-size: 1.4rem;
+        margin-bottom: 40px;
+        line-height: 2.5rem;
+        color: var(--grayishBlue);
+    }
+
+.button{
+    padding: 12px 30px;
+    font-size: 1.6rem;
+    border-radius: 18px;
+    background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--brightCyan) 100%);
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+}

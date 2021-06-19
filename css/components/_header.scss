@@ -1,0 +1,25 @@
+.header{
+    &-container{
+        padding: 18px;
+        display: flex;
+        justify-content: space-between;
+    }
+    img{
+        height: 22px;
+        width: auto;
+    }
+    &-menu{
+        width: 30px;
+        background: url(../../images/icon-hamburger.svg) no-repeat center;
+
+    }
+    &-background{
+        display: inline-block;
+        width: 375px;
+        height: 300px;
+        background: url(../images/image-mockups.png) bottom no-repeat, url(../images/bg-intro-mobile.svg) center no-repeat;
+        background-size: 345px, cover;
+        margin-bottom: 1rem;
+        
+    }
+}
