@@ -1,0 +1,61 @@
+:root {
+  --darkBlue: hsl(233, 26%, 24%);
+  --limeGreen: hsl(136, 65%, 51%);
+  --brightCyan: hsl(192, 70%, 51%);
+  --grayishBlue: hsl(233, 8%, 62%);
+  --lightGrayish: hsl(220, 16%, 96%);
+  --veryLight: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.hero {
+  border: 2px solid blue;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.hero__tittle {
+  font-size: 3.5rem;
+  margin: 16px;
+  font-weight: 500;
+  padding: 0 20px;
+  color: var(--darkBlue);
+}
+
+.hero__text {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  padding: 0 30px;
+  line-height: 2.5rem;
+  color: var(--grayishBlue);
+}
+
+.hero .button {
+  padding: 12px 30px;
+  font-size: 1.4rem;
+  border-radius: 18px;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--limeGreen)), to(var(--brightCyan)));
+  background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--brightCyan) 100%);
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+}
+/*# sourceMappingURL=main.css.map */
