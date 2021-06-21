@@ -25,6 +25,25 @@ body{
         padding: 0 20px;
     }
 }
+.button{
+    padding: 12px 30px;
+    font-size: 1.4rem;
+    border-radius: 18px;
+    background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--brightCyan) 100%);
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+// Icons located footer Social Media
+$iconsSocial:(
+fb: url(../../images/icon-facebook.svg),
+yt: url(../../images/icon-youtube.svg),
+tw: url(../../images/icon-twitter.svg),
+pt: url(../../images/icon-pinterest.svg),
+in: url(../../images/icon-instagram.svg)
+);
+
 // Icons located in Articules
 $icons:(
 online: url(../../images/icon-online.svg),
@@ -33,6 +52,7 @@ onboarding: url(../../images/icon-onboarding.svg),
 api: url(../../images/icon-api.svg)
 );
 
+// Icons from Articules
 @each $name, $icon in $icons {
     .icon-#{$name}{
         span{
@@ -42,5 +62,18 @@ api: url(../../images/icon-api.svg)
             margin: 0 auto;
             background: $icon no-repeat center;
         }
+    }
+}
+
+// Footer icons social media
+
+@each $name, $icon in $iconsSocial {
+    .footer_icons-#{$name}{
+
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: $icon center no-repeat;
+        margin-top: 10px;
     }
 }

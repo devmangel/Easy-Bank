@@ -1,23 +1,38 @@
-footer{
-    border: blue solid 1px;
+.footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--darkBlue);
+    color: var(--white);
 
-    .logo{
-        display: inline-block;
-        width: 200px;
-        height: 50px;
-        background: url(../../images/logo.svg) center;
-        background-repeat: no-repeat;
-        border: blue solid 1px;
+    svg{
+        margin-top: 30px;
     }
-    .footer__container_icons{
+    &__icons{
         display: flex;
-        justify-content: space-around;
-        
-        .container_icons-fb{
-            
+        justify-content: space-evenly;
+        width: 50%;
+    }
+    &-menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+
+        a{
+            text-decoration: none;
+            color: var(--white);
+            font-size: 1.2rem;
+            margin-bottom: 15px;
         }
+    }
+    &-botton-container{
+        margin-top: 20px;
+    }
+    &__finalText{
+        font-size: 1.2rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: var(--grayishBlue);
     }
 }
