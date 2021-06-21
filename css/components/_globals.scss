@@ -6,7 +6,7 @@
     --lightGrayish: hsl(220, 16%, 96%);
     --veryLight: hsl(0, 0%, 98%);
     --white: hsl(0, 0%, 100%);
-    --wrapperSpace: 20px;
+    --wrapperSpace: 25px;
 }
 *{
     box-sizing: border-box;
@@ -23,5 +23,24 @@ body{
     font-size: 1.8rem;
     .wrapper{
         padding: 0 20px;
+    }
+}
+// Icons located in Articules
+$icons:(
+online: url(../../images/icon-online.svg),
+budget: url(../../images/icon-budgeting.svg),
+onboarding: url(../../images/icon-onboarding.svg),
+api: url(../../images/icon-api.svg)
+);
+
+@each $name, $icon in $icons {
+    .icon-#{$name}{
+        span{
+            display: block; 
+            width: 100px;
+            height: 80px;
+            margin: 0 auto;
+            background: $icon no-repeat center;
+        }
     }
 }
